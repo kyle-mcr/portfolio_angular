@@ -1,0 +1,103 @@
+.nav{
+    padding:1%;
+    color: #212121;
+    font-size: 10px;
+    position:relative;
+}
+#me{
+    max-height: 30vh;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 30vh;
+    display: inline-block;
+    color: white;
+    border-radius: 50%;
+}
+h1{
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgb(255, 0, 0); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .05em; /* Adjust as needed */
+    animation: typing 4.0s steps(40, end), blink-caret .75s step-end infinite;
+    font-family: Lucida Sans Typewriter,Lucida Console,monaco,Bitstream Vera Sans Mono,monospace;
+    font-size: 32px;
+    
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 590px; }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(255, 0, 0); }
+  }
+.page-link{
+    display: inline-block;
+    vertical-align: top;
+    margin-left:10px;
+}
+
+.links{
+    position:absolute;
+    right:50px;
+    top:25px;
+}
+#about{
+    border-top:1px solid black;
+}
+.test{
+    overflow-y:scroll;
+}
+.body{
+    height: 700px;
+}
+h2{
+    font-size: 25pt;
+    font-family:sans-serif;
+    position: relative;
+    color: #444649;
+    width:120px;
+    margin-left:50%;
+    display: block;
+    border-bottom: 2px solid rgb(255, 0, 85);
+}
+#icon{
+    font-size: 3.0em;
+    display: block;
+    margin-bottom: 45px;
+    margin-left: 25px;
+    text-decoration: none;
+    color: black;
+}
+#icon1{
+    font-size: 3.0em;
+    display: block;
+    margin-bottom: 45px;
+    margin-left: 25px;
+    margin-top:45px;
+    text-decoration: none;
+    color: black;
+}
+#icon4{
+    font-size: 2.6em;
+    display: block;
+    margin-left: 25px;
+    text-decoration: none;
+    color: black;
+
+}
+a, i{
+    text-decoration: none;
+    display: block;
+    width: 15px;
+    margin-left:18px;
+}
+i :hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }

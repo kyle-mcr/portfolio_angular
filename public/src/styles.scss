@@ -1,0 +1,43 @@
+/* You can add global styles to this file, and also import other style files */
+
+.block{
+    margin:100px 0px;
+}
+.wrapper{
+    text-align: center;
+    max-width:1000px;
+    padding:0px 50px;
+}
+button{
+    background-color:transparent;
+    padding:10px 15px;
+    border-radius:5px;
+    color:black;
+    border-color:black;
+    transition:0.5s;
+
+}
+button:hover{
+    background-color:black;
+    color:white;
+}
+#icon{
+    max-width: 32px;
+    max-height: 32px;
+}
+body{
+    background-image: url("assets/img/newFogcrop.jpeg");
+    height: 100%;
+    background-repeat:no-repeat;
+    min-width: 1024px;
+    width: 100%;
+
+}
+
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+  img.bg {
+    left: 50%;
+    margin-left: -512px;   /* 50% */
+  }
+}
+
