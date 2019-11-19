@@ -1,62 +1,111 @@
 <div class="container test">
-    <div class="nav">
-        <img id="me" src="../../assets/img/me.jpeg" alt="Smiley face">
+        <p id="disclaimer">*This site was made without the use of any external libraries*</p>
+    <div id="home">
         <h1>Hi, Welcome to my Portfolio!</h1>
         <div class="links">
+            <button class="page-link" (click)="goToDestination('home')">Home</button>
             <button class="page-link" (click)="goToDestination('about')">About</button>
             <button class="page-link" dest="projects" (click)="goToDestination('projects')">Projects</button>
-            <button class="page-link" dest="resume" (click)="goToDestination('resume')">Resume</button>
-            <button class="page-link" dest="contact" (click)="goToDestination('about')">Contact</button>
+            <button class="page-link" dest="contact" (click)="goToDestination('contact')">Contact</button>
         </div>
     </div>
     <div class="body">
-            <div class="rotate"><a href="https://www.linkedin.com/in/kylemcreynolds1/" target="_blank"><i id="icon1" class="fab fa-linkedin"></i></a></div>
-            <div class="rotate"><a href="https://github.com/kyle-mcr" target="_blank"><i id="icon" class="fab fa-github-square"></i></a></div>
-            <div class="rotate"><a href="https://www.instagram.com/kmcreynoldz/" target="_blank"><i id="icon" class="fab fa-instagram"></i></a></div>
-            <div class="rotate"><a href="mailto:kylemcreynolds92@gmail.com" target="_blank"><i id="icon4" class="far fa-envelope"></i></a></div>
     </div>
     <div id="about">
-        <div class="about_container">
-            <h2>ABOUT</h2>
+        <h2>ABOUT</h2>
+        <div class="abtcontainer">
+            <img id="me" src="../../assets/img/me.jpeg" alt="Smiley face">
+            <p id="abouttext"> I am a full stack developer whose background emphasizes communication and interpersonal
+                skills. I use online
+                resources, teamwork and internal drive to accomplish tasks in the most efficient, clean manner
+                available.
+                Prior to attending bootcamp I worked as an Account Manager for a robotics company in San Jose, CA.
+                Because
+                of my
+                love for algorithms and multifaceted complexity, I am seeking a back-end or full-stack position.
+                Ideally,
+                this position would be as part of a small team – inside or out of a larger company - with whom I could
+                both
+                develop and prove my skills.</p>
+        </div>
+        <div class="edcontainer">
+            <div class="codingdojo">
+                <h2 id="ed">Education</h2>
+                <h4>Coding Dojo | Web Development</h4>
+                <p class="edinfo">Coding Dojo helped me to gain an unbelievable amount of knowledge in a shockingly
+                    short period of time. On
+                    average I coded in 14 hours per day during the week, and 4 hours on weekends every day for 15 weeks.
+                    Well
+                    over a thousand hours in addition to what I had learned previously.</p>
+
+                <p class="edinfo">The curriculum consists of ~200 unique and increasingly difficult whiteboarding
+                    sessions, dozens upon dozens
+                    of small projects leading up to 3-5 larger culminating projects each stack, 3 exams and 3 project
+                    weeks. </p>
+
+
+                <p class="edinfo">Each exam requires the student to complete a full stack application, simplified
+                    versions of IMDB, LinkedIn,
+                    etc. in 4.5 hours. Usually involving multiple SQL relationships, 4-5 unique pages and full CRUD.
+                </p>
+            </div>
+            <div class="technologies">
+                <h4 id="techies">Technologies I Know</h4>
+                <div class="Fundamentals">
+                    <h6>Foundation</h6>
+                    <img class="icon" src="../../assets/img/HTML.png" alt="html">
+                    <img class="icon" src="../../assets/img/CSS.png" alt="css">
+                    <img class="icon" src="../../assets/img/scss.png" alt="scss">
+                    <img class="icon" src="../../assets/img/JavaScript.png" alt="js">
+                </div>
+                <div class="Python">
+                    <h6>Python</h6>
+                    <img class="icon" src="../../assets/img/python.png" alt="python">
+                    <img class="icon" src="../../assets/img/flask-icon.png" alt="flask">
+                    <img class="icon" src="../../assets/img/django.png" alt="python">
+                    <img class="icon" src="../../assets/img/sqlite.png" alt="python">
+
+                </div>
+                <div class="MEAN">
+                    <h6>MEAN</h6>
+                    <img class="icon" src="../../assets/img/mongodb.png" alt="mongo">
+                    <img class="icon" src="../../assets/img/expressjs.png" alt="express">
+                    <img class="icon" src="../../assets/img/angularjs.png" alt="angular">
+                    <img class="icon" src="../../assets/img/node.png" alt="nodejs">
+                </div>
+                <div class="JAVA">
+                    <h6>JAVA</h6>
+                    <img class="icon" src="../../assets/img/java.png" alt="java">
+                    <img class="icon" src="../../assets/img/spring.svg" alt="spring">
+                    <img class="icon" src="../../assets/img/sb.png" alt="springboot">
+                    <img class="icon" src="../../assets/img/mysql.png" alt="mysql">
+                </div>
+                <div class="Others">
+                    <h6>Others</h6>
+                    <img class="icon" src="../../assets/img/git.png" alt="git">
+                    <img class="icon" src="../../assets/img/jQuery.png" alt="jquery">
+                    <img class="icon" src="../../assets/img/bootstrap.jpeg" alt="bootstrap">
+                    <img class="icon" src="../../assets/img/aws.png" alt="bootstrap">
+                </div>
+            </div>
         </div>
     </div>
     <div id="projects">
-        <div class="about_container">
-            <p>
-                alsdkfjhasdlkfjahldksfjhalskdfjhalkdsjhfalksdjhfalkdsjhfalksdjhflkajhdfslkjhalksdjhflakjshdflkajhsdf
-                alsdkfjhasdlkfjahldksfjhalskdfjhalkdsjhfalksdjhfalkdsjhfalksdjhflkajhdfslkjhalksdjhflakjshdflkajhsdf
-                alsdkfjhasdlkfjahldksfjhalskdfjhalkdsjhfalksdjhfalkdsjhfalksdjhflkajhdfslkjhalksdjhflakjshdflkajhsdf
-                alsdkfjhasdlkfjahldksfjhalskdfjhalkdsjhfalksdjhfalkdsjhfalksdjhflkajhdfslkjhalksdjhflakjshdflkajhsdf
-                alsdkfjhasdlkfjahldksfjhalskdfjhalkdsjhfalksdjhfalkdsjhfalksdjhflkajhdfslkjhalksdjhflakjshdflkajhsdf
-                alsdkfjhasdlkfjahldksfjhalskdfjhalkdsjhfalksdjhfalkdsjhfalksdjhflkajhdfslkjhalksdjhflakjshdflkajhsdf
-
-            </p>
+        <div class="honorable Mention">
+            <h3>Honorable Mention</h3>
         </div>
-    </div>
-    <div id="resume">
-        <div class="about_container">
-            <p>
-                alsdkfjhasdlkfjahldksfjhalskdfjhalkdsjhfalksdjhfalkdsjhfalksdjhflkajhdfslkjhalksdjhflakjshdflkajhsdf
-                alsdkfjhasdlkfjahldksfjhalskdfjhalkdsjhfalksdjhfalkdsjhfalksdjhflkajhdfslkjhalksdjhflakjshdflkajhsdf
-                alsdkfjhasdlkfjahldksfjhalskdfjhalkdsjhfalksdjhfalkdsjhfalksdjhflkajhdfslkjhalksdjhflakjshdflkajhsdf
-                alsdkfjhasdlkfjahldksfjhalskdfjhalkdsjhfalksdjhfalkdsjhfalksdjhflkajhdfslkjhalksdjhflakjshdflkajhsdf
-                alsdkfjhasdlkfjahldksfjhalskdfjhalkdsjhfalksdjhfalkdsjhfalksdjhflkajhdfslkjhalksdjhflakjshdflkajhsdf
-                alsdkfjhasdlkfjahldksfjhalskdfjhalkdsjhfalksdjhfalkdsjhfalksdjhflkajhdfslkjhalksdjhflakjshdflkajhsdf
-
-            </p>
+        <div class="otsr">
+            <h3>On The Spot Recipes</h3>
         </div>
     </div>
     <div id="contact">
-        <div class="about_container">
-            <p>
-                alsdkfjhasdlkfjahldksfjhalskdfjhalkdsjhfalksdjhfalkdsjhfalksdjhflkajhdfslkjhalksdjhflakjshdflkajhsdf
-                alsdkfjhasdlkfjahldksfjhalskdfjhalkdsjhfalksdjhfalkdsjhfalksdjhflkajhdfslkjhalksdjhflakjshdflkajhsdf
-                alsdkfjhasdlkfjahldksfjhalskdfjhalkdsjhfalksdjhfalkdsjhfalksdjhflkajhdfslkjhalksdjhflakjshdflkajhsdf
-                alsdkfjhasdlkfjahldksfjhalskdfjhalkdsjhfalksdjhfalkdsjhfalksdjhflkajhdfslkjhalksdjhflakjshdflkajhsdf
-                alsdkfjhasdlkfjahldksfjhalskdfjhalkdsjhfalksdjhfalkdsjhfalksdjhflkajhdfslkjhalksdjhflakjshdflkajhsdf
-                alsdkfjhasdlkfjahldksfjhalskdfjhalkdsjhfalksdjhfalkdsjhfalksdjhflkajhdfslkjhalksdjhflakjshdflkajhsdf
-
-            </p>
-        </div>
+        <div class="wobble"><a href="https://www.linkedin.com/in/kylemcreynolds1/" target="_blank"><i id="icon1"
+                    class="fab fa-linkedin"></i></a></div>
+        <div class="wobble"><a href="https://github.com/kyle-mcr" target="_blank"><i id="icon"
+                    class="fab fa-github-square"></i></a></div>
+        <div class="wobble"><a href="https://www.instagram.com/kmcreynoldz/" target="_blank"><i id="icon"
+                    class="fab fa-instagram"></i></a></div>
+        <div class="wobble"><a href="mailto:kylemcreynolds92@gmail.com" target="_blank"><i id="icon4"
+                    class="far fa-envelope"></i></a></div>
     </div>
 </div>

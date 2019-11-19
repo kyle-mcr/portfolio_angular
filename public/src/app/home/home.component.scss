@@ -1,4 +1,5 @@
-.nav{
+
+#home{
     padding:1%;
     color: #212121;
     font-size: 10px;
@@ -11,6 +12,7 @@
     display: inline-block;
     color: white;
     border-radius: 50%;
+    margin-left: 5vh;
 }
 h1{
     display: inline-block;
@@ -23,6 +25,8 @@ h1{
     animation: typing 4.0s steps(40, end), blink-caret .75s step-end infinite;
     font-family: Lucida Sans Typewriter,Lucida Console,monaco,Bitstream Vera Sans Mono,monospace;
     font-size: 32px;
+    margin-left: 30%;
+    margin-top: 15%;
     
 }
 
@@ -41,63 +45,237 @@ h1{
     vertical-align: top;
     margin-left:10px;
 }
-
 .links{
     position:absolute;
     right:50px;
     top:25px;
 }
 #about{
-    border-top:1px solid black;
+    border-top:2px solid black;
+    background: rgb(191,202,220);
+    background: linear-gradient(0deg, rgba(191,202,220,1) 0%, rgba(247,248,249,1) 100%);
 }
 .test{
     overflow-y:scroll;
 }
 .body{
-    height: 700px;
+    height: 602px;
 }
 h2{
-    font-size: 25pt;
+    font-size: 29pt;
     font-family:sans-serif;
     position: relative;
     color: #444649;
-    width:120px;
-    margin-left:50%;
-    display: block;
+    width: 20px;
+    margin-left:2%;
+    display: inline-block;
     border-bottom: 2px solid rgb(255, 0, 85);
+    width:22vh;
 }
 #icon{
     font-size: 3.0em;
-    display: block;
-    margin-bottom: 45px;
-    margin-left: 25px;
     text-decoration: none;
     color: black;
 }
 #icon1{
     font-size: 3.0em;
-    display: block;
-    margin-bottom: 45px;
-    margin-left: 25px;
-    margin-top:45px;
     text-decoration: none;
     color: black;
 }
 #icon4{
-    font-size: 2.6em;
-    display: block;
-    margin-left: 25px;
+    font-size: 2.9em;
     text-decoration: none;
     color: black;
 
 }
-a, i{
+a{
     text-decoration: none;
-    display: block;
-    width: 15px;
-    margin-left:18px;
 }
-i :hover {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+@-webkit-keyframes wobble {
+    16.65% {
+      -webkit-transform: translateY(8px);
+      transform: translateY(8px);
+    }
+    33.3% {
+      -webkit-transform: translateY(-6px);
+      transform: translateY(-6px);
+    }
+    49.95% {
+      -webkit-transform: translateY(4px);
+      transform: translateY(4px);
+    }
+    66.6% {
+      -webkit-transform: translateY(-2px);
+      transform: translateY(-2px);
+    }
+    83.25% {
+      -webkit-transform: translateY(1px);
+      transform: translateY(1px);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
   }
+  
+  @keyframes wobble {
+    16.65% {
+      -webkit-transform: translateY(8px);
+      -ms-transform: translateY(8px);
+      transform: translateY(8px);
+    }
+    33.3% {
+      -webkit-transform: translateY(-6px);
+      -ms-transform: translateY(-6px);
+      transform: translateY(-6px);
+    }
+    49.95% {
+      -webkit-transform: translateY(4px);
+      -ms-transform: translateY(4px);
+      transform: translateY(4px);
+    }
+    66.6% {
+      -webkit-transform: translateY(-2px);
+      -ms-transform: translateY(-2px);
+      transform: translateY(-2px);
+    }
+    83.25% {
+      -webkit-transform: translateY(1px);
+      -ms-transform: translateY(1px);
+      transform: translateY(1px);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+  
+  .wobble {
+    display: inline-block;
+    margin-left:5vh;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  }
+  
+  .wobble:hover {
+    -webkit-animation-name: wobble;
+    animation-name: wobble;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+  }
+.links{
+    position: fixed;
+    top: 0px;
+    margin-top: 4px;
+}
+#about{
+    height:100%;
+    padding-bottom: 8vh;
+    border-bottom: 1px solid black;
+    margin-bottom: 0px;
+    width:100%;
+}
+#projects{
+    height:100%;
+    background: rgb(247,248,249);
+    background: linear-gradient(0deg, rgba(247,248,249,1) 0%, rgba(191,202,220,1) 100%);
+    margin-top: 0px;
+}
+.Python, .MEAN, .JAVA, .Others, .Fundamentals { 
+    width:105px;
+    height:350px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.icon{
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    margin-left:15px;
+    
+}
+h6{
+font-size: 1.23em;
+text-align: center;
+vertical-align: top;
+padding:0px;
+margin-top:3px;
+margin-bottom: 15px;
+}
+h4{
+    font-size: 1.1em;
+    margin-left:3%;
+}
+h3{
+    font-size: 1.1em;
+    margin-left:3%;
+    margin-top: 0px;
+}
+#abouttext{
+    font-size: 1.3em;
+    text-align: center;
+    display: inline-block;
+    margin-left: 4%;
+    width: 790px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#ed{
+    font-size: 29pt;
+    font-family:sans-serif;
+    position: relative;
+    color: #444649;
+    width: 20px;
+    margin-left:3%;
+    display: inline-block;
+    border-bottom: 2px solid rgb(255, 0, 85);
+    width:29vh; 
+    margin-bottom: 1px;
+}
+.edinfo{
+    font-size: 1.2em;
+    display: inline-block;
+    margin-left: 3%;
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.technologies{
+    display: inline-block;
+    vertical-align: top;
+    margin-top:15vh;
+}
+.codingdojo{
+    display: inline-block;
+    vertical-align: top;
+    width:50%;
+    margin-right: 5%;
+}
+#techies{
+    margin-left: 30%;
+    font-size: 17pt;
+    font-family:sans-serif;
+    position: relative;
+    color: #444649;
+    border-bottom: 2px solid rgb(255, 0, 85);
+    width:37vh; 
+    margin-bottom: 6px;
+}
+.rotate{
+    display: inline-block;
+    margin-left: 5vh;
+}
+#disclaimer{
+    display: inline-block;
+    vertical-align: top;
+    margin:0px;
+    font-size: .01em;
+    transition:0.5s;
+}
