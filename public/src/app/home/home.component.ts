@@ -14,4 +14,5 @@ export class HomeComponent implements OnInit {
   goToDestination(id){
     document.getElementById(id).scrollIntoView({behavior:'smooth'});
   }
+  
 }

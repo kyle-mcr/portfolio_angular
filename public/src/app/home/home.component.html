@@ -1,5 +1,5 @@
 <div class="container test">
-        <p id="disclaimer">*This site was made without the use of any external libraries*</p>
+    <p id="disclaimer">*This site was made without the use of any external libraries*</p>
     <div id="home">
         <h1>Hi, Welcome to my Portfolio!</h1>
         <div class="links">
@@ -8,8 +8,6 @@
             <button class="page-link" dest="projects" (click)="goToDestination('projects')">Projects</button>
             <button class="page-link" dest="contact" (click)="goToDestination('contact')">Contact</button>
         </div>
-    </div>
-    <div class="body">
     </div>
     <div id="about">
         <h2>ABOUT</h2>
@@ -91,14 +89,165 @@
         </div>
     </div>
     <div id="projects">
-        <div class="honorable Mention">
-            <h3>Honorable Mention</h3>
+        <h5 id="project1">Projects</h5>
+        <div class="hminfo">
+            <h3 id="hmtitle"><a class="site" href="http://3.17.208.59" target="_blank">Honorable Mention</a>
+            </h3>
+            <p id="hmp">Technologies used: HTML, CSS, Django, Python, mapboxAPI, SQLite
+                -I created a web application for an easy and organized way to store recommendations. Stored in different
+                categories for easier viewing you can store a recommendation(dining, activities, sightseeing) with any
+                notes about it and it will set the location of your recommendation using the mapboxAPI. You can also
+                check in your current area if there is anything you had previously input in your account.</p>
         </div>
-        <div class="otsr">
-            <h3>On The Spot Recipes</h3>
+        <div class="cc">
+            <div class="carousel">
+                <ul class="slides">
+                    <input type="radio" name="radio-buttons" id="img-1" checked />
+                    <li class="slide-container">
+                        <div class="slide-image">
+                            <img class="hmimg" src="../../assets/img/hm2.png">
+                        </div>
+                        <div class="carousel-controls">
+                            <label for="img-4" class="prev-slide">
+                                <span>&lsaquo;</span>
+                            </label>
+                            <label for="img-2" class="next-slide">
+                                <span>&rsaquo;</span>
+                            </label>
+                        </div>
+                    </li>
+                    <input type="radio" name="radio-buttons" id="img-2" />
+                    <li class="slide-container">
+                        <div class="slide-image">
+                            <img class="hmimg" src="../../assets/img/hm1.png">
+                        </div>
+                        <div class="carousel-controls">
+                            <label for="img-1" class="prev-slide">
+                                <span>&lsaquo;</span>
+                            </label>
+                            <label for="img-3" class="next-slide">
+                                <span>&rsaquo;</span>
+                            </label>
+                        </div>
+                    </li>
+                    <input type="radio" name="radio-buttons" id="img-3" />
+                    <li class="slide-container">
+                        <div class="slide-image">
+                            <img class="hmimg" src="../../assets/img/hm4.png">
+                        </div>
+                        <div class="carousel-controls">
+                            <label for="img-2" class="prev-slide">
+                                <span>&lsaquo;</span>
+                            </label>
+                            <label for="img-4" class="next-slide">
+                                <span>&rsaquo;</span>
+                            </label>
+                        </div>
+                    </li>
+                    <input type="radio" name="radio-buttons" id="img-4" />
+                    <li class="slide-container">
+                        <div class="slide-image">
+                            <img class="hmimg" src="../../assets/img/hm3.png">
+                        </div>
+                        <div class="carousel-controls">
+                            <label for="img-3" class="prev-slide">
+                                <span>&lsaquo;</span>
+                            </label>
+                            <label for="img-1" class="next-slide">
+                                <span>&rsaquo;</span>
+                            </label>
+                        </div>
+                    </li>
+                    <div class="carousel-dots">
+                        <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+                        <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+                        <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+                        <label for="img-4" class="carousel-dot" id="img-dot-4"></label>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="otsinfo">
+            <h3 id="hmtitle"><a class="site" href="http://onthespotrecipes.com" target="_blank">On The Spot Recipes</a>
+            </h3>
+            <p id="hmp">Technologies used: HTML, CSS, Angular, Node, Express, TypeScript, JavaScript, RecipePuppy
+                -I made this app to find uses for ingredients you have around your house. The user can select
+                ingredients in four different categories. Once the user submits their ingredients, a list of 10 dessert
+                recipes will be generated. The user can then go to the recipe link or reset the ingredients and submit
+                different ones.</p>
+        </div>
+        <div class="cc2">
+            <div class="carousel2">
+                <ul class="slides2">
+                    <input type="radio" name="radio-buttons2" id="img-5" checked />
+                    <li class="slide-container2">
+                        <div class="slide-image2">
+                            <img class="hmimg2" src="../../assets/img/ots1.png">
+                        </div>
+                        <div class="carousel-controls2">
+                            <label for="img-8" class="prev-slide2">
+                                <span>&lsaquo;</span>
+                            </label>
+                            <label for="img-6" class="next-slide2">
+                                <span>&rsaquo;</span>
+                            </label>
+                        </div>
+                    </li>
+                    <input type="radio" name="radio-buttons2" id="img-6" />
+                    <li class="slide-container2">
+                        <div class="slide-image2">
+                            <img class="hmimg2" src="../../assets/img/ots2.png">
+                        </div>
+                        <div class="carousel-controls2">
+                            <label for="img-5" class="prev-slide2">
+                                <span>&lsaquo;</span>
+                            </label>
+                            <label for="img-7" class="next-slide2">
+                                <span>&rsaquo;</span>
+                            </label>
+                        </div>
+                    </li>
+                    <input type="radio" name="radio-buttons2" id="img-7" />
+                    <li class="slide-container2">
+                        <div class="slide-image2">
+                            <img class="hmimg2" src="../../assets/img/ots3.png">
+                        </div>
+                        <div class="carousel-controls2">
+                            <label for="img-6" class="prev-slide2">
+                                <span>&lsaquo;</span>
+                            </label>
+                            <label for="img-8" class="next-slide2">
+                                <span>&rsaquo;</span>
+                            </label>
+                        </div>
+                    </li>
+                    <input type="radio" name="radio-buttons2" id="img-8" />
+                    <li class="slide-container2">
+                        <div class="slide-image2">
+                            <img class="hmimg2" src="../../assets/img/ots4.png">
+                        </div>
+                        <div class="carousel-controls2">
+                            <label for="img-7" class="prev-slide2">
+                                <span>&lsaquo;</span>
+                            </label>
+                            <label for="img-5" class="next-slide2">
+                                <span>&rsaquo;</span>
+                            </label>
+                        </div>
+                    </li>
+                    <div class="carousel-dots2">
+                        <label for="img-5" class="carousel-dot2" id="img-dot-5"></label>
+                        <label for="img-6" class="carousel-dot2" id="img-dot-6"></label>
+                        <label for="img-7" class="carousel-dot2" id="img-dot-7"></label>
+                        <label for="img-8" class="carousel-dot2" id="img-dot-8"></label>
+                    </div>
+                </ul>
+            </div>
         </div>
     </div>
+
     <div id="contact">
+        <p id="contact2">Contact Me!</p>
         <div class="wobble"><a href="https://www.linkedin.com/in/kylemcreynolds1/" target="_blank"><i id="icon1"
                     class="fab fa-linkedin"></i></a></div>
         <div class="wobble"><a href="https://github.com/kyle-mcr" target="_blank"><i id="icon"
@@ -107,5 +256,6 @@
                     class="fab fa-instagram"></i></a></div>
         <div class="wobble"><a href="mailto:kylemcreynolds92@gmail.com" target="_blank"><i id="icon4"
                     class="far fa-envelope"></i></a></div>
+        <p class="contact">Phone Number: (831)-247-6678 &nbsp;&nbsp;|&nbsp;&nbsp; Email: kylemcreynolds92@gmail.com</p>
     </div>
 </div>
